@@ -1,22 +1,22 @@
 class PrxSd < Formula
   desc "Open-source Rust antivirus engine with YARA-X and real-time protection"
   homepage "https://github.com/openprx/prx-sd"
-  version "0.2.1"
+  version "0.2.2"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/openprx/prx-sd/releases/download/v0.2.1/sd-macos-x86_64"
-      sha256 "36dbf1c57603976f8c2480785c30d74b7f4a6e3ba100b13f51d466984e8a6d05"
+      url "https://github.com/openprx/prx-sd/releases/download/v0.2.2/sd-macos-x86_64"
+      sha256 "13203677863335fc7f9d76872a3feb71a851c2d4fd08cd6d60be6a9187faefed"
     else
-      url "https://github.com/openprx/prx-sd/releases/download/v0.2.1/sd-macos-aarch64"
-      sha256 "2422f0da731b0d24ec1073ee8323f84aa42ae977b32bb25f4137acb2f2eab943"
+      url "https://github.com/openprx/prx-sd/releases/download/v0.2.2/sd-macos-aarch64"
+      sha256 "a6712b467e7f42a0382c18c3c1999729005220bdc1f611e55a5c9f4fbd0bb70e"
     end
   end
 
   on_linux do
-    url "https://github.com/openprx/prx-sd/releases/download/v0.2.1/sd-linux-x86_64"
-    sha256 "a772c3743ac1c12fbc539b350ad887e30ec11cf450476dd35a05e7c4c8e970a4"
+    url "https://github.com/openprx/prx-sd/releases/download/v0.2.2/sd-linux-x86_64"
+    sha256 "a51d6d1365fb9daa964c2fe323de576ada66baee78ad3772f55a4c2d40116c7c"
   end
 
   def install
